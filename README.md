@@ -6,10 +6,10 @@ This repository demonstrates foundational concepts in shell scripting, focusing 
 
 ## Table of Contents
 
-1. [Control Flow Example: Checking a Number](#control-flow-example-checking-a-number)
-2. [For Loop Example 1: Printing Numbers 1–5](#for-loop-example-1-printing-numbers-1-5)
-3. [For Loop Example 2: Iterating Over Strings](#for-loop-example-2-iterating-over-strings)
-4. [For Loop Example 3: C-Style For Loop](#for-loop-example-3-c-style-for-loop)
+1. [Control Flow Example: Checking a Number](shell/#control-flow-example-checking-a-number)
+2. [For Loop Example 1: Printing Numbers 1–5](shell/#for-loop-example-1-printing-numbers-1-5)
+3. [For Loop Example 2: Iterating Over Strings](shell/#for-loop-example-2-iterating-over-strings)
+4. [For Loop Example 3: C-Style For Loop](shell/#for-loop-example-3-c-style-for-loop)
 
 ---
 
@@ -37,26 +37,26 @@ fi
     ```bash
     vim control_flow.sh
     ```
-    ![Screenshot](Contouch.png)
+    ![Screenshot](shell/Contouch.png)
 
 2. **Inside the vim editor (editing the script)**  
-    ![Screenshot](Contouch.png)
+    ![Screenshot](shell/Contouch.png)
 3a. Insert your script by presssing "i" key to enter INSERT mode.
-     ![Screenshot](commmod.png)
+     ![Screenshot](shell/commmod.png)
    3b. press "Esc" key followed by ":wq" to save and exit the editor.
 
 4. **Make the script executable**  
     ```bash
     chmod +x control_flow.sh
     ```
-    ![Screenshot](commpermisssion.png)
+    ![Screenshot](shell/commpermisssion.png)
 5. **Run the script**  
     ```bash
     ./control_flow.sh
     ```
-    ![Screenshot](commente.png)
+    ![Screenshot](shell/commente.png)
 enter a number: for example 4
-  ![Screenshot](issuereolve.png)
+  ![Screenshot](shell/issuereolve.png)
 ---
 6 To use Elif  comnnand use 'vim' to edit the file again and add
 ```
@@ -71,12 +71,12 @@ elif [ $num -lt 0 ]; then
 fi
 ```
 
-![Screenshot](elifadded.pnf)
+![Screenshot](shell/elifadded.pnf)
 
 8 Run the file gain and enter a negative number this time.
 enter both negative and positive numbers (2, 3, -2) on each run.
-![Screenshot](commpositive.pnf)
-![Screenshot](elif.pnf)
+![Screenshot](shell/commpositive.pnf)
+![Screenshot](shell/elif.pnf)
 
 
 
@@ -99,22 +99,22 @@ done
     ```bash
     vim loop.sh
     ```
-    ![Screenshot](loop1.png)
+    ![Screenshot](shell/loop1.png)
 
 2. **Inside the vim editor (editing the script)**  
-    ![Screenshot](loop.png)
+    ![Screenshot](shell/loop.png)
 
 3. **Make the script executable**  
     ```bash
     chmod +x loop.sh
     ```
-    ![Screenshot](loop2perm.png)
+    ![Screenshot](shell/loop2perm.png)
 
 4. **Run the script**  
     ```bash
     ./loop.sh
     ```
-    ![Screenshot](loop3.png)
+    ![Screenshot](shell/loop3.png)
 
 ---
 ## For Loop Example 2: Iterating Over Strings
@@ -136,21 +136,21 @@ done
     ```bash
     vim loopExample2.sh
     ```
-    ![Screenshot](loopexampleperm.png)
+    ![Screenshot](shell/loopexampleperm.png)
 
 2. **Inside the vim editor (editing the script)**  
-    ![Screenshot](loopcounting.png)
+    ![Screenshot](shell/loopcounting.png)
 
 3. **Make the script executable**  
     ```bash
     chmod +x loopExample2.sh
     ```
-   ![Screenshot](loopexampleperm.png)
+   ![Screenshot](shell/loopexampleperm.png)
 4. **Run the script**  
     ```bash
     ./loopExample2sh
     ```
-    ![Screenshot](loopsuccess.png)
+    ![Screenshot](shell/loopsuccess.png)
 
 ---
 
@@ -174,17 +174,17 @@ done
     vim whileloop.sh
    ```
 **And make it executable**
-    ![Screenshot](loopexampleperm.png)
+    ![Screenshot](shell/loopexampleperm.png)
 
  **Inside the vim editor (editing the script)**  
-    ![Screenshot](elif2.png)
+    ![Screenshot](shell/elif2.png)
 
 
  **Run the script**  
     ```bash
     ./whileloop.sh
     ```
-    ![Screenshot](elifwork.png)
+    ![Screenshot](shell/elifwork.png)
 
 ---
 
@@ -192,19 +192,18 @@ done
    
 
  **Inside the vim editor (editing the script)**  
-    ![Screenshot](forloopout.png)
+    ![Screenshot](shell/forloopout.png)
 
 **And make it executable**
-    ![Screenshot](forloopout.png)
+    ![Screenshot](shell/forloopout.png)
 
     
  
-    ![Screenshot](elifwork.png)
-     
-      ![Screenshot](cstyle.png)
+ ![Screenshot](shell/elifwork.png)
+ ![Screenshot](shell/cstyle.png)
         edit
-        ![Screenshot](forcsyntax.png)
+![Screenshot](shell/forcsyntax.png)
         **Run the script**  
-          ![Screenshot](cstylesucc.png)
+![Screenshot](shell/cstylesucc.png)
 
 ---
