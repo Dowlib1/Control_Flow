@@ -1,18 +1,22 @@
-# Control_Flow
-if(s) are used in control floews other; else, elif, case, fi, case and esac
-# Control Flow in Scripting
------------------------
-# For Loop Examples in Shell Scripting
-??//
-# For Loop Examples in Shell Scripting
+# Shell Scripting: Control Flow & For Loop Examples
 
-This README demonstrates basic usage of `for` loops in shell scripting, as well as how to use control flow statements like `if`, `elif`, and `else`. Each example includes a space to insert relevant screenshots for every step: editing with `vim`, making the script executable with `chmod +x`, running the script, and the script as shown inside the vim editor.
+This repository demonstrates foundational concepts in shell scripting, focusing on control flow (if/elif/else statements) and for loops. Each example includes a step-by-step guide, with designated spaces for you to insert screenshots for better documentation and learning.
 
 ---
 
-## Example 1: Using an If-Else Statement to Check a Number
+## Table of Contents
 
-**Script:**
+1. [Control Flow Example: Checking a Number](#control-flow-example-checking-a-number)
+2. [For Loop Example 1: Printing Numbers 1–5](#for-loop-example-1-printing-numbers-1-5)
+3. [For Loop Example 2: Iterating Over Strings](#for-loop-example-2-iterating-over-strings)
+4. [For Loop Example 3: C-Style For Loop](#for-loop-example-3-c-style-for-loop)
+
+---
+
+## Control Flow Example: Checking a Number
+
+This script reads a number from the user and prints whether the number is positive, negative, or zero.
+
 ```bash
 #!/bin/bash
 
@@ -29,331 +33,178 @@ fi
 
 ### Step-by-Step Guide
 
-#### 1. Open the script in vim
-- Command:  
-  ```bash
-  vim check_number.sh
-  ```
-- _**Insert screenshot here**_
+1. **Open the script in vim**  
+    ```bash
+    vim control_flow.sh
+    ```
+    ![Screenshot](Contouch.png)
 
-#### 2. Inside the vim editor (editing the script)
-- _**Insert screenshot here**_
+2. **Inside the vim editor (editing the script)**  
+    ![Screenshot](Contouch.png)
+3a. Insert your script by presssing "i" key to enter INSERT mode.
+     ![Screenshot](commmod.png)
+   3b. press "Esc" key followed by ":wq" to save and exit the editor.
 
-#### 3. Make the script executable
-- Command:  
-  ```bash
-  chmod +x check_number.sh
-  ```
-- _**Insert screenshot here**_
-
-#### 4. Run the script
-- Command:  
-  ```bash
-  ./check_number.sh
-  ```
-- _**Insert screenshot here**_
-
+4. **Make the script executable**  
+    ```bash
+    chmod +x control_flow.sh
+    ```
+    ![Screenshot](commpermisssion.png)
+5. **Run the script**  
+    ```bash
+    ./control_flow.sh
+    ```
+    ![Screenshot](commente.png)
+enter a number: for example 4
+  ![Screenshot](issuereolve.png)
 ---
-
-## Example 2: Printing Numbers from 1 to 5 with a For Loop
-
-**Script:**
-```bash
+6 To use Elif  comnnand use 'vim' to edit the file again and add
+```
 #!/bin/bash
-
-for i in 1 2 3 4 5
-do
-  echo "Number: $i"
-done
-```
-
-### Steps
-
-#### 1. Open the script in vim
-- Command:  
-  ```bash
-  vim for_loop_1.sh
-  ```
-- _**Insert screenshot here**_
-
-#### 2. Inside the vim editor
-- _**Insert screenshot here**_
-
-#### 3. Make the script executable
-- Command:  
-  ```bash
-  chmod +x for_loop_1.sh
-  ```
-- _**Insert screenshot here**_
-
-#### 4. Run the script
-- Command:  
-  ```bash
-  ./for_loop_1.sh
-  ```
-- _**Insert screenshot here**_
-
----
-
-## Example 3: Iterating Over a List of Strings
-
-**Script:**
-```bash
-#!/bin/bash
-
-for fruit in apple banana orange
-do
-  echo "Fruit: $fruit"
-done
-```
-
-### Steps
-
-#### 1. Open the script in vim
-- Command:  
-  ```bash
-  vim for_loop_2.sh
-  ```
-- _**Insert screenshot here**_
-
-#### 2. Inside the vim editor
-- _**Insert screenshot here**_
-
-#### 3. Make the script executable
-- Command:  
-  ```bash
-  chmod +x for_loop_2.sh
-  ```
-- _**Insert screenshot here**_
-
-#### 4. Run the script
-- Command:  
-  ```bash
-  ./for_loop_2.sh
-  ```
-- _**Insert screenshot here**_
-
----
-
-## Example 4: For Loop with C-style Syntax
-
-**Script:**
-```bash
-#!/bin/bash
-
-for ((i=1; i<=5; i++))
-do
-  echo "Counter: $i"
-done
-```
-
-### Steps
-
-#### 1. Open the script in vim
-- Command:  
-  ```bash
-  vim for_loop_3.sh
-  ```
-- _**Insert screenshot here**_
-
-#### 2. Inside the vim editor
-- _**Insert screenshot here**_
-
-#### 3. Make the script executable
-- Command:  
-  ```bash
-  chmod +x for_loop_3.sh
-  ```
-- _**Insert screenshot here**_
-
-#### 4. Run the script
-- Command:  
-  ```bash
-  ./for_loop_3.sh
-  ```
-- _**Insert screenshot here**_
-
----
-
-## Notes
-
-- Replace each `filename.sh` with your actual script's filename in the commands above.
-- Insert your screenshots in the indicated sections for thorough documentation.
-
----
-
-Happy scripting!
-
-
-//??
----
-
-## Example 1: Printing Numbers from 1 to 5
-
-**Script:**
-```bash
-#!/bin/bash
-
-for i in 1 2 3 4 5
-do
-  echo "Number: $i"
-done
-```
-
-### Steps
-
-#### 1. Open the script in vim
-_**Insert screenshot here**_
-
-#### 2. Inside the vim editor
-_**Insert screenshot here**_
-
-#### 3. Make the script executable
-```bash
-chmod +x filename.sh
-```
-_**Insert screenshot here**_
-
-#### 4. Run the script
-```bash
-./filename.sh
-```
-_**Insert screenshot here**_
-
----
-
-## Example 2: Iterating Over a List of Strings
-
-**Script:**
-```bash
-#!/bin/bash
-
-for fruit in apple banana orange
-do
-  echo "Fruit: $fruit"
-done
-```
-
-### Steps
-
-#### 1. Open the script in vim
-_**Insert screenshot here**_
-
-#### 2. Inside the vim editor
-_**Insert screenshot here**_
-
-#### 3. Make the script executable
-```bash
-chmod +x filename.sh
-```
-_**Insert screenshot here**_
-
-#### 4. Run the script
-```bash
-./filename.sh
-```
-_**Insert screenshot here**_
-
----
-
-## Example 3: For Loop with C-style Syntax
-
-**Script:**
-```bash
-#!/bin/bash
-
-for ((i=1; i<=5; i++))
-do
-  echo "Counter: $i"
-done
-```
-
-### Steps
-
-#### 1. Open the script in vim
-_**Insert screenshot here**_
-
-#### 2. Inside the vim editor
-_**Insert screenshot here**_
-
-#### 3. Make the script executable
-```bash
-chmod +x filename.sh
-```
-_**Insert screenshot here**_
-
-#### 4. Run the script
-```bash
-./filename.sh
-```
-_**Insert screenshot here**_
-
----
-
-
-
-
-
-
-
-----------------------
-This repository, **@Dowlib1/Control_Flow**, contains an assignment focused on demonstrating control flow concepts in shell scripting. The main goal of this assignment is to illustrate how conditional statements can be used to make decisions based on user input in a Bash script.
-
-## Assignment Overview
-
-The assignment presents a simple script that reads a number from the user and determines whether the number is positive, negative, or zero. This is achieved using `if`, `elif`, and `else` control flow structures in Bash.
-
-### Example Script
-
-```bash
-#!/bin/bash
-
 read -p "Enter a number: " num
+echo "You have entered the number $num"
 
 if [ $num -gt 0 ]; then
     echo "The number is positive."
 elif [ $num -lt 0 ]; then
     echo "The number is negative."
-else
-    echo "The number is zero."
 fi
 ```
 
-### How It Works
+![Screenshot](elifadded.pnf)
 
-1. The script prompts the user to enter a number.
-2. It evaluates the input:
-    - If the number is greater than 0, it prints "The number is positive."
-    - If the number is less than 0, it prints "The number is negative."
-    - Otherwise, it prints "The number is zero."
+8 Run the file gain and enter a negative number this time.
+enter both negative and positive numbers (2, 3, -2) on each run.
+![Screenshot](commpositive.pnf)
+![Screenshot](elif.pnf)
 
-This simple example showcases the usage of conditional statements in shell scripting, which are essential for implementing logic and decision-making in scripts.
 
-## Screenshots
 
-Screenshots demonstrating the script's execution are available in this repository.
+## For Loop Example 1: Printing Numbers 1–5
 
-## Getting Started
+This script prints numbers from 1 to 5 using a for loop.
 
-To run the script:
+```bash
+#!/bin/bash
 
-1. Clone this repository.
-2. Save the script to a file, e.g., `check_number.sh`.
-3. Make the script executable:
-   ```bash
-   chmod +x check_number.sh
-   ```
-4. Run the script:
-   ```bash
-   ./check_number.sh
-   ```
+for i in 1 2 3 4 5
+do
+  echo "Number: $i"
+done
+```
 
-## Learning Objectives
+### Step-by-Step Guide
 
-- Understand the basics of control flow in shell scripting.
-- Learn how to use `if`, `elif`, and `else` statements.
-- Practice reading user input and making decisions based on that input.
+1. **Open the script in vim**  
+    ```bash
+    vim loop.sh
+    ```
+    ![Screenshot](loop1.png)
+
+2. **Inside the vim editor (editing the script)**  
+    ![Screenshot](loop.png)
+
+3. **Make the script executable**  
+    ```bash
+    chmod +x loop.sh
+    ```
+    ![Screenshot](loop2perm.png)
+
+4. **Run the script**  
+    ```bash
+    ./loop.sh
+    ```
+    ![Screenshot](loop3.png)
+
+---
+## For Loop Example 2: Iterating Over Strings
+
+This script demonstrates iterating over a list of strings.
+
+```bash
+#!/bin/bash
+
+for fruit in apple banana orange
+do
+  echo "Fruit: $fruit"
+done
+```
+
+### Step-by-Step Guide
+
+1. **Open the script in vim**  
+    ```bash
+    vim loopExample2.sh
+    ```
+    ![Screenshot](loopexampleperm.png)
+
+2. **Inside the vim editor (editing the script)**  
+    ![Screenshot](loopcounting.png)
+
+3. **Make the script executable**  
+    ```bash
+    chmod +x loopExample2.sh
+    ```
+   ![Screenshot](loopexampleperm.png)
+4. **Run the script**  
+    ```bash
+    ./loopExample2sh
+    ```
+    ![Screenshot](loopsuccess.png)
 
 ---
 
-Feel free to explore the script and screenshots to deepen your understanding of control flow in scripting!
+## For Loop Example 3: C-Style For Loop
+
+This script uses the C-style syntax for `for` loops.
+
+```bash
+#!/bin/bash
+
+for ((i=1; i<=5; i++))
+do
+  echo "Counter: $i"
+done
+```
+
+### Step-by-Step Guide
+
+1. **Open the script in vim**  
+    ```bash
+    vim whileloop.sh
+   ```
+**And make it executable**
+    ![Screenshot](loopexampleperm.png)
+
+ **Inside the vim editor (editing the script)**  
+    ![Screenshot](elif2.png)
+
+
+ **Run the script**  
+    ```bash
+    ./whileloop.sh
+    ```
+    ![Screenshot](elifwork.png)
+
+---
+
+1. **Other examples**  
+   
+
+ **Inside the vim editor (editing the script)**  
+    ![Screenshot](forloopout.png)
+
+**And make it executable**
+    ![Screenshot](forloopout.png)
+
+    
+ 
+    ![Screenshot](elifwork.png)
+     
+      ![Screenshot](cstyle.png)
+        edit
+        ![Screenshot](forcsyntax.png)
+        **Run the script**  
+          ![Screenshot](cstylesucc.png)
+
+---
